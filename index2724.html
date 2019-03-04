@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<!--[if IE 7]> 
+<html lang="en" class="ie7 responsive" >
+   <![endif]-->  
+   <!--[if IE 8]> 
+   <html lang="en" class="ie8 responsive" >
+      <![endif]-->  
+      <!--[if IE 9]> 
+      <html lang="en" class="ie9 responsive" >
+         <![endif]-->  
+         <!--[if !IE]><!--> 
+         <html lang="en" class="responsive" >
+            <!--<![endif]-->  
+            
+<!-- Mirrored from depasserinfotech.in/ecom-themes/1/index.php?route=information/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Mar 2019 13:02:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+               <title>Your Store</title>
+               <base #href="" />
+               <meta charset="utf-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <meta name="description" content="My Store" />
+               <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/filter_product.css" />
+<link rel="stylesheet" type="text/css" href="css/wide-grid.css" />
+<link rel="stylesheet" type="text/css" href="js/magnific/magnific-popup.css" media="screen" />
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/mf/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tweetfeed.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/magnific/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+var responsive_design = 'yes';
+</script>
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://depasserinfotech.in/ecom-themes/1/js/respond.min.js"></script>
+<![endif]-->            </head>
+            <body class="common-home no-box-type-7 border-width-0 body-other banners-effect-3 body-header-type-1">
+               <script type="text/javascript">
+                  $(window).load(function()
+                  {
+                  	$('.quickview a').magnificPopup({
+                  	preloader: true,
+                  	tLoading: '',
+                  	type: 'iframe',
+                  	mainClass: 'quickview',
+                  	removalDelay: 200,
+                  	gallery:
+                  	{
+                  		enabled: true
+                  	}
+                  	});
+                  });
+               </script>
+               <div id="popup-1" class="popup mfp-hide" style="max-width: 750px;background-image: url(images/bg-popup-newsletter.png);background-position: top right;background-repeat: no-repeat;">
+                  <h4>Join our newsletter<br>and get discount!</h4>
+                  <div class="content">
+                     Subscribe to the newsletter to receive<br>
+                     updates about new products.
+                  </div>
+                  <div class="newsletter">     
+                     <input type="text" class="email" placeholder="E-mail" />     
+                     <a class="button subscribe">Add</a>
+                  </div>
+                  <script type="text/javascript">
+                     $(document).ready(function() 
+                     {
+                     	function Subscribe() 
+                     	{
+                     		$.post('#', 
+                     		{ 
+                     			email: $('#popup-1 .email').val() 
+                     		}, function (e) {
+                     			if(e.error === 1) 
+                     			{
+                     				var r = confirm(e.message);
+                     				if (r == true) 
+                     				{
+                     					$.post('#', { 
+                     					email: $('#popup-1 .email').val() 
+                     					}, function (e) {
+                     					$('#popup-1 .email').val('');
+                     					alert(e.message);
+                     					}, 'json');
+                     				}
+                     			} 
+                     			else 
+                     			{
+                     				$('#popup-1 .email').val('');
+                     				alert(e.message);
+                     			}
+                     		}
+                     		, 'json');
+                     	}
+                     	$('#popup-1 .subscribe').click(Subscribe);
+                     	$('#popup-1 .email').keypress(function (e) 
+                     	{
+                     		if (e.which == 13) 
+                     		{
+                     			Subscribe();
+                     		}
+                     	});
+                     });
+                  </script>     
+               </div>
+               <script type="text/javascript">
+                  $(document).ready(function() 
+                  {
+                  	if($(window).width() > 992) 
+                  	{
+                  		var show_after = parseInt('', 20);
+                  		var autoclose_after = parseInt('', 20);
+                  		setTimeout(function () 
+                  		{
+                  			$.magnificPopup.open({
+                  			items: {
+                  			src: '#popup-1',
+                  			type: 'inline'
+                  			},
+                  			tLoading: '',
+                  			mainClass: 'popup-module mfp-with-zoom popup-type-1',
+                  			removalDelay: 200,
+                  			});
+                  			if (autoclose_after > 0) 
+                  			{
+                  				setTimeout(function () 
+                  				{
+                  					$.magnificPopup.close();
+                  				}, autoclose_after);
+                  			}
+                  		}, show_after);
+                  	}
+                  });
+               </script>
+               <div class="standard-body " id="header-notice-48991860">
+                  <div class="header-notice full-width clearfix">
+                     <a href="#" class="close-notice"></a>
+                     <div class="container">
+                        <p>This is new bar notification!</p>
+                     </div>
+                  </div>
+               </div>
+               <script type="text/javascript">
+                  var css_tpl = '<style type="text/css">';
+                  css_tpl += '</style>'
+                  $("head").append(css_tpl);
+               </script>
+               <script type="text/javascript">
+                  $("#header-notice-48991860 .header-notice").show();
+                  $('#header-notice-48991860 .close-notice').on('click', function () 
+                  {
+                  	$("#header-notice-48991860 .header-notice").hide();
+                  	return false;
+                  });
+               </script>
+				<!--
+                <div id="cookie-1" class="cookie" style="position: fixed;width: 100%;z-index: 9999;background-image: url(http://depasserinfotech.in/ecom-themes/1/images/bg-cookie-module.png); background-position: bottom center;background-repeat: no-repeat;bottom: 0">
+                  <div class="standard-body">
+                     <div class="full-width">
+                        <div class="container">
+                           <div class="content" style="color: #808080;">Our website use cookies. If you continue to use this site we will assume that you are happy with this. <br>
+                              More about cookies: <a href="#" target="_blank" style="color: #d9121f ">www.aboutcookies.org</a>
+                           </div>
+                           <div class="operations">
+                              <div class="dont-show-label">
+                                 <label>
+                                 <input type="checkbox" class="dont-show-me" />
+                                 <span style="">Don’t show again</span>
+                                 </label>
+                              </div>
+                              <div class="button">Accept cookies</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+               <script type="text/javascript">
+                  $(document).ready(function() {
+                  
+                                 $('#cookie-1 .button').click(function () {
+                                 if ($('#cookie-1 .dont-show-me').is(':checked')) {
+                                     var now = new Date();
+                                       var time = now.getTime();
+                                       time += 3600 * 24 * 1000 * 365;
+                                       now.setTime(time);
+                                     document.cookie = encodeURIComponent('cookie-module-1-accepted') + "=" + encodeURIComponent(1) + ';expires=' + now.toUTCString() + "; path=/";
+                                 } 
+                                 $('#cookie-1').fadeOut('slow');
+                            });
+                       
+                  });
+               </script>
+				-->
+                <div class="fixed-body">
+                  <div id="main" class="main-fixed">
+                    <header>
+						
+<div class="background-header"></div>
+	<div class="slider-header">
+	   <div id="top" class="full-width">
+		  <div class="background-top"></div>
+		  <div class="background">
+			 <div class="shadow"></div>
+			 <div class="pattern">
+				<div class="container">
+				   <div class="row">
+					  <div class="col-sm-4" id="header-left">
+						 <div class="search_form">
+							<div class="button-search"></div>
+							<input type="text" class="input-block-level search-query" name="search" placeholder="Search" id="search_query" value="" />
+							<div id="autocomplete-results" class="autocomplete-results"></div>
+							
+						 </div>
+
+
+					  </div>
+					  <div class="col-sm-4" id="header-center">
+						 <div class="logo">
+							<a href="index.html"><img src="images/your_logo.png" title="Your Store" alt="Your Store" style="width: 140px;" /></a>
+						 </div>
+					  </div>
+					  <div class="col-sm-4" id="header-right">
+						 <a href="account-dashboard.html" class="my-account"><i class="fa fa-user"></i></a>
+						 <div id="cart_block" class="dropdown">
+							<div class="cart-heading dropdown-toogle" data-hover="dropdown" data-toggle="dropdown" onclick="window.location.href = '#'">
+							   <i class="cart-count"><span id="total_count_ajax">1</span></i>
+							   <i class="cart-icon"><img src="img/icon-cart-hover.png" class="cart-icon-hover" alt="">
+							   <img src="img/icon-cart.png" class="cart-icon-standard" alt=""></i>
+							   <p><strong id="total_price_ajax"><span id="total_price">$100.00</span></strong></p>
+							</div>
+							<!--
+							<div class="dropdown-menu" id="cart_content">
+							   <div id="cart_content_ajax">
+								  <div class="empty">Your shopping cart is empty!</div>
+							   </div>
+							</div>
+							-->
+							<div class="dropdown-menu" id="cart_content"><div id="cart_content_ajax">
+								<div class="mini-cart-info">
+								 <table>
+									  <tbody><tr>
+									 <td class="image">       
+									 <a href="#">
+									 <img src="images/demo/hp_1-100x100.jpg" alt="iPod Classic" title="iPod Classic">
+									 </a>
+									   </td>
+									<td class="name">
+										<a href="#">iPod Classic</a>
+										<div></div>
+									</td>
+									 <td class="quantity">x&nbsp;1</td>
+									 <td class="total">$100.00</td>
+									 <td class="remove"><a href="javascript:;" onclick="" title="Remove">x</a></td>
+								   </tr>
+									   </tbody></table>
+								</div>
+								<div class="mini-cart-total">
+								 <table>
+									  <tbody><tr>
+									 <td class="right"><b>Sub-Total:</b></td>
+									 <td class="right">$100.00</td>
+								   </tr>
+									  <tr>
+									 <td class="right"><b>Total:</b></td>
+									 <td class="right">$100.00</td>
+								   </tr>
+									</tbody></table>
+								</div>
+								<div class="checkout">
+									<a href="cart.html" class="button btn-default">View Cart</a> &nbsp;
+									<a href="checkout.html" class="button">Checkout</a>
+								</div>
+								</div></div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+				<div class="megamenu-background">
+				   <div class="">
+					  <div class="overflow-megamenu container">
+						 <div class="row mega-menu-modules">
+							<div class="col-md-3">
+							   <div id="megamenu_108330936" class="container-megamenu container vertical mobile-disabled">
+								  <div id="menuHeading">
+									 <div class="megamenuToogle-wrapper">
+										<div class="megamenuToogle-pattern">
+										   <div class="container">
+											  Categories				
+										   </div>
+										</div>
+									 </div>
+								  </div>
+								  <div class="megamenu-wrapper">
+									 <div class="megamenu-pattern">
+										<div class="container">
+										   <ul class="megamenu shift-left">
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>ELECTRONICS</strong></span></a>
+												 <div class="sub-menu " style="width:190px">
+													<div class="content" >
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-12 hover-menu">
+																   <div class="menu">
+																	  <ul>
+																		<li>
+																			<a href="catalouge.html"  class="main-menu">Computer Accessories<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a>
+																		 </li>
+																		 <li>
+                                                                             <a href="catalouge.html"  class="main-menu">Mobile Holder</a>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu">Mobile Accessories</a>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu">Speaker & Headphone</a>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>     HOME & KITCHEN</strong></span></a>
+												 <div class="sub-menu " style="width:190px">
+													<div class="content" >
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-12 hover-menu">
+																   <div class="menu">
+																	  <ul>
+																		<li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Kitchen<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html"  class="">Kitchen & Dining</a></li>
+																			   <li><a href="catalouge.html"  class="">Kitchen & Home Appliances</a></li>
+																			   <li><a href="catalouge.html"  class="">Kitchen Storage & Containers</a></li>
+																			   <li><a href="catalouge.html"  class="">Kitchen Tools</a></li>
+																			</ul>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Home Improvement</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html"  class="">Home Decor</a></li>
+																			   <li><a href="catalouge.html"  class="">Home Improvement</a></li>
+																			   <li><a href="catalouge.html"  class="">Garden</a></li>
+																			   <li><a href="catalouge.html"  class="">Others</a></li>
+																			</ul>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Handloom</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html"  class="">Bedsheet</a></li>
+																			   <li><a href="catalouge.html"  class="">Comforter Sets</a></li>
+																			   <li><a href="catalouge.html"  class="">hand Towel</a></li>
+																			   <li><a href="catalouge.html"  class="">Others</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' >
+												 <span>
+												 <strong>Fashion<span class="megamenu-label" style="background: #1349b2;color:  #ffffff;">
+												 <span style="background: #1349b2;border-color: #1349b2"></span>HOT</span>
+												 </strong>
+												 </span>
+												 </a>
+												 <div class="sub-menu " style="width:795px">
+													<div class="content" style="background-image:url(images/bg-women.png);background-position: top right;background-repeat: no-repeat;">
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-3  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-12 hover-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li><a href="catalouge.html"  class="main-menu ">Socks</a></li>
+																		 <li><a href="catalouge.html" class="main-menu with-submenu"  class="main-menu ">Men's fashion<span class="megamenu-label" style="background: #d9121f;color: #ffffff"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></a>
+                                                                         <ul>
+																			   <li><a href="catalouge.html"  class="">Men's T-shirt</a></li>
+																         </ul>
+																		 </li>
+																		 <li><a href="catalouge.html" class="main-menu with-submenu" class="main-menu ">Jewellery</a>
+																		 <ul>
+																			   <li><a href="catalouge.html"  class="">Bracelet</a></li>
+																			   <li><a href="catalouge.html"  class="">Ring</a></li>
+																			   <li><a href="catalouge.html"  class="">Earrings</a></li>
+																			   <li><a href="catalouge.html"  class="">Pendent</a></li>
+																         </ul>
+																		 </li>
+																		 <li><a href="catalouge.html"  class="main-menu ">Others<span class="megamenu-label" style="background: #1349b2;color: #ffffff"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></a></li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+														  <div class="col-sm-5  mobile-disabled">
+															 <p><br></p>
+														  </div>
+														  <div class="col-sm-4  mobile-disabled">
+															 <div style="float:right;width:238px">
+																<div class="product">
+																   <div class="new">New</div>
+																   <div class="image">
+																	  <a href="catalouge.html">
+																	  <img src="images/megamenu-product.png" alt="Product">
+																	  </a>
+																   </div>
+																   <div class="name"><a href="#">Apple Cinema 30"</a></div>
+																   <div class="price">$110.00</div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>Beauty & Health</strong></span></a>
+												 <div class="sub-menu " style="width:190px">
+													<div class="content" >
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-12 hover-menu">
+																   <div class="menu">
+																	  <ul>
+																		<li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Beauty Care</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html"  class="">Men Grooming</a></li>
+																			   <li><a href="catalouge.html"  class="">Women Grooming</a></li>
+																			   <li><a href="catalouge.html"  class="">Facial & Body Care</a></li>
+																			   <li><a href="catalouge.html"  class="">Nail Art</a></li>
+																			</ul>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Health Care</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html"  class="">Amway</a></li>
+																			   <li><a href="catalouge.html"  class="">Vestige</a></li>
+																			</ul>
+																		 </li>
+																		 <li>
+																			<a href="catalouge.html" class="main-menu">Baby Care</a>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class='' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' >
+												 <span>
+												 <strong>Others</strong>
+												 </span>
+												 </a>
+											  </li>
+											  <li class='' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='my-wishlist.html' class='clearfix' ><span><strong>Wishlist</strong></span></a>
+											  </li>
+										   </ul>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							   <script type="text/javascript">
+								  $(window).load(function()
+								  {
+									var css_tpl = '<style type="text/css">';
+									css_tpl += '#megamenu_108330936 ul.megamenu > li > .sub-menu > .content {';
+									css_tpl += '-webkit-transition: all 200ms ease-out !important;';
+									css_tpl += '-moz-transition: all 200ms ease-out !important;';
+									css_tpl += '-o-transition: all 200ms ease-out !important;';
+									css_tpl += '-ms-transition: all 200ms ease-out !important;';
+									css_tpl += 'transition: all 200ms ease-out !important;';
+									css_tpl += '}</style>'
+									$("head").append(css_tpl);
+								  });
+							   </script>
+							</div>
+							<div class="col-md-9">
+							   <div id="megamenu_76622824" class="container-megamenu  horizontal">
+								  <div class="megaMenuToggle">
+									 <div class="megamenuToogle-wrapper">
+										<div class="megamenuToogle-pattern">
+										   <div class="container">
+											  <div>
+												 <span></span>
+												 <span></span>
+												 <span></span>
+											  </div>
+											  Navigation				
+										   </div>
+										</div>
+									 </div>
+								  </div>
+								  <div class="megamenu-wrapper">
+									 <div class="megamenu-pattern">
+										<div class="container">
+										   <ul class="megamenu shift-up">
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>ELECTRONICS<span class="megamenu-label" style="background: #d9121f;color:  #ffffff;"><span style="background: #d9121f;border-color: #d9121f"></span>NEW</span></strong></span></a>
+												 <div class="sub-menu " style="width:190px">
+													<div class="content" >
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-12 hover-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li><a href="catalouge.html"  class="main-menu ">Computer Accessories</a></li>
+																		 <li><a href="catalouge.html"  class="main-menu ">Mobile Holder</a></li>
+																		 <li><a href="catalouge.html"  class="main-menu ">Mobile Accessories</a></li>
+																		 <li><a href="catalouge.html"  class="main-menu ">Speakers & Headphone</a></li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											   <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>HOME & KITCHEN<span class="megamenu-label" style="background: #1349b2;color:  #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a>
+												 <div class="sub-menu full-width-sub-menu" style="width:100%">
+													<div class="content" style="background-image:url(images/bg-accessories.png);background-position: top right;background-repeat: no-repeat;">
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-6  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html" class="main-menu with-submenu">Kitchen</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Kitchen & Dining</a></li>
+																			   <li><a href="catalouge.html" >Kitchen & Home Appliances</a></li>
+																			   <li><a href="catalouge.html" >Kitchen Storage & Containers</a></li>
+																			   <li><a href="catalouge.html" >Kitchen Tools</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Home & Improvement</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Home Decor</a></li>
+																			   <li><a href="catalouge.html" >Home Improvement</a></li>
+																			   <li><a href="catalouge.html" >Garden</a></li>
+																			   <li><a href="catalouge.html" >Others</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Handloom</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html">Bedsheet</a></li>
+																			   <li><a href="catalouge.html">Comforter Set</a></li>
+																			   <li><a href="catalouge.html">Hand Towel</a></li>
+																			   <li><a href="catalouge.html">Others</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													   <div class="border"></div>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-disabled"><a href="catalouge.html" style="display: block;max-width: 555px"><img src="images/megamenu-banner.png" alt="Banner" style="display: block"></a></div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>FASHION<span class="megamenu-label" style="background: #1349b2;color:  #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a>
+												 <div class="sub-menu full-width-sub-menu" style="width:100%">
+													<div class="content" style="background-image:url(images/bg-accessories.png);background-position: top right;background-repeat: no-repeat;">
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-6  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html" class="main-menu with-submenu">Men's Fashion</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Socks</a></li>
+																			   <li><a href="catalouge.html" >Men's T-shirt</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Jewellery</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Bracelet</a></li>
+																			   <li><a href="catalouge.html" >Ring</a></li>
+																			   <li><a href="catalouge.html" >Earrings</a></li>
+																			   <li><a href="catalouge.html" >Pendent</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Others</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html">XYZ</a></li>
+																			   <li><a href="catalouge.html">ABC</a></li>
+																			   <li><a href="catalouge.html">DEF</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													   <div class="border"></div>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-disabled"><a href="catalouge.html" style="display: block;max-width: 555px"><img src="images/megamenu-banner.png" alt="Banner" style="display: block"></a></div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class=' with-sub-menu hover' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>BEAUTY & HEALTH<span class="megamenu-label" style="background: #1349b2;color:  #ffffff;"><span style="background: #1349b2;border-color: #1349b2"></span>HOT</span></strong></span></a>
+												 <div class="sub-menu full-width-sub-menu" style="width:100%">
+													<div class="content" style="background-image:url(images/bg-accessories.png);background-position: top right;background-repeat: no-repeat;">
+													   <p class="arrow"></p>
+													   <div class="row">
+														  <div class="col-sm-6  mobile-enabled">
+															 <div class="row">
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html" class="main-menu with-submenu">Beauty Care</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Men Grooming</a></li>
+																			   <li><a href="catalouge.html" >Women Grooming</a></li>
+																			   <li><a href="catalouge.html" >Facial & Body Care</a></li>
+																			   <li><a href="catalouge.html" >Nail Art</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Health Care</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html" >Amway</a></li>
+																			   <li><a href="catalouge.html" >Vestige</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+																<div class="col-sm-4 static-menu">
+																   <div class="menu">
+																	  <ul>
+																		 <li>
+																			<a href="catalouge.html"  class="main-menu with-submenu">Baby Care</a>
+																			<div class="open-categories"></div>
+																			<div class="close-categories"></div>
+																			<ul>
+																			   <li><a href="catalouge.html">XYZ</a></li>
+																			   <li><a href="catalouge.html">ABC</a></li>
+																			   <li><a href="catalouge.html">DEF</a></li>
+																			</ul>
+																		 </li>
+																	  </ul>
+																   </div>
+																</div>
+															 </div>
+														  </div>
+													   </div>
+													   <div class="border"></div>
+													   <div class="row">
+														  <div class="col-sm-12  mobile-disabled"><a href="catalouge.html" style="display: block;max-width: 555px"><img src="images/megamenu-banner.png" alt="Banner" style="display: block"></a></div>
+													   </div>
+													</div>
+												 </div>
+											  </li>
+											  <li class='' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='catalouge.html' class='clearfix' ><span><strong>Others</strong></span></a>
+											  </li>
+											  <li class='' >
+												 <p class='close-menu'></p>
+												 <p class='open-menu'></p>
+												 <a href='my-wishlist.html' class='clearfix' ><span><strong>Wishlist</strong></span></a>
+											  </li>
+										   </ul>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							   <script type="text/javascript">
+								  $(window).load(function()
+								  {
+									var css_tpl = '<style type="text/css">';
+									css_tpl += '#megamenu_76622824 ul.megamenu > li > .sub-menu > .content {';
+									css_tpl += '-webkit-transition: all 200ms ease-out !important;';
+									css_tpl += '-moz-transition: all 200ms ease-out !important;';
+									css_tpl += '-o-transition: all 200ms ease-out !important;';
+									css_tpl += '-ms-transition: all 200ms ease-out !important;';
+									css_tpl += 'transition: all 200ms ease-out !important;';
+									css_tpl += '}</style>'
+									$("head").append(css_tpl);
+								  });
+							   </script>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+	
+	
+ 
+ 
+						<div id="slider" class="full-width">
+						   <div class="background-slider"></div>
+						   <div class="background">
+							  <div class="shadow"></div>
+							  <div class="pattern">
+								 <div class="fullwidth" id="camera_2">
+									<div class="camera_slider">
+									   <div class="spinner"></div>
+									   <div class="camera_wrap" id="camera_wrap_2" style="height: 500px">
+										  <div><a href="#"><img src="images/slider-011.png" alt="Slider"></a></div>
+										  <div><a href="#"><img src="images/slider-022.png" alt="Slider"></a></div>
+										  <div><a href="#"><img src="images/slider-033.png" alt="Slider"></a></div>
+									   </div>
+									</div>
+								 </div>
+								 <script type="text/javascript">
+									var camera_slider = $("#camera_wrap_2");
+									
+									camera_slider.owlCarousel({
+									slideSpeed : 300,
+									lazyLoad : true,
+									singleItem: true,
+									autoPlay: 13000,
+									stopOnHover: true,
+									navigation: true,
+									navigationText: false
+									});
+									
+									$(window).load(function() 
+									{	
+										$("#camera_2 .spinner").fadeOut(200);
+										$("#camera_wrap_2").css("height", "auto");
+									});	
+								 </script>								
+								 <div class="row row-no-padding">
+									<div class="col-sm-6">
+									   <a href="javascript:openPopup(1)"><img src="images/banner-01.png" alt="Banner" style="display:block;margin:0px auto"></a>
+									</div>
+									<div class="col-sm-6">
+									   <a href="#"><img src="images/banner-02.png" alt="Banner" style="display:block;margin:0px auto"></a>
+									</div>
+								 </div>
+							  </div>
+						   </div>
+						</div>
+
+					</header> 
+					
+					 <div class="main-content full-width home">
+                        <div class="background-content"></div>
+                        <div class="background">
+                           <div class="shadow"></div>
+                           <div class="pattern">
+                              <div class="container">
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="box clearfix box-with-products with-scroll box-no-advanced">
+                                          <a class="next" href="#" id="myCarousel16357600_next"><span></span></a>
+                                          <a class="prev" href="#" id="myCarousel16357600_prev"><span></span></a>
+                                          <script type="text/javascript">
+                                             $(document).ready(function() 
+                                             {
+                                             	var owl16357600 = $(".box #myCarousel16357600 .carousel-inner");
+                                             	$("#myCarousel16357600_next").click(function(){
+                                             	owl16357600.trigger('owl.next');
+                                             	return false;
+                                             	})
+                                             	$("#myCarousel16357600_prev").click(function(){
+                                             	owl16357600.trigger('owl.prev');
+                                             	return false;
+                                             	});
+                                             	owl16357600.owlCarousel({
+                                             	slideSpeed : 500,
+                                             	singleItem:true,
+                                             	});
+                                             });
+                                          </script>
+                                          <div class="box-heading">Latest products</div>
+                                          <div class="strip-line"></div>
+                                          <div class="clear"></div>
+                                          <div class="box-content products">
+                                             <div class="box-product">
+                                                <div id="myCarousel16357600" class="carousel slide">
+                                                   <div class="carousel-inner">
+                                                      <div class="active item">
+                                                         <div class="product-grid">
+                                                            <div class="row">
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/samsung_tab_1-250x250.jpg" alt="Samsung Galaxy Tab 10.1" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name">
+                                                                           <a href="#">Samsung Galaxy Tab 10.1</a>
+                                                                        </div>
+                                                                        <div class="price">
+                                                                           $241.99					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a href="javascript:openPopup('10', '49')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('49');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/ipod_classic_1-250x250.jpg" alt="iPod Classic" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name">
+                                                                           <a href="#">iPod Classic</a>
+                                                                        </div>
+                                                                        <div class="price">
+                                                                           $122.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/hp_1-250x250.jpg" alt="HP LP3065" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">HP LP3065</a></div>
+                                                                        <div class="price">
+                                                                           $122.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/sony_vaio_1-250x250.jpg" alt="Sony VAIO" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">Sony VAIO</a></div>
+                                                                        <div class="price">
+                                                                           $1,202.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="item">
+                                                         <div class="product-grid">
+                                                            <div class="row">
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_pro_1-250x250.jpg" alt="MacBook Pro" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook Pro</a></div>
+                                                                        <div class="price">
+                                                                           $2,000.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_air_1-250x250.jpg" alt="MacBook Air" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook Air</a></div>
+                                                                        <div class="price">
+                                                                           $1,202.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_1-250x250.jpg" alt="MacBook" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook</a></div>
+                                                                        <div class="price">
+                                                                           $602.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-3 col-xs-6  ">
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="sale">Sale</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/apple_cinema_30-250x250.jpg" alt="Apple Cinema 30&quot;" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                        <script>
+                                                                           $(function () 
+                                                                           {
+                                                                           var austDay = new Date();
+                                                                           austDay = new Date(2016, 11 - 1, 01);
+                                                                           $('#countdown8648728').countdown({until: austDay});
+                                                                           });
+                                                                        </script>
+                                                                        <div id="countdown8648728" class="clearfix"></div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">Apple Cinema 30&quot;</a></div>
+                                                                        <div class="price">
+                                                                           <span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row banners hidden-xs">
+                                          <div class="col-sm-3"><a href="#"><img src="images/banner-03.png" alt="Image"></a></div>
+                                          <div class="col-sm-6"><a href="#"><img src="images/banner-04.png" alt="Image"></a></div>
+                                          <div class="col-sm-3"><a href="#"><img src="images/banner-05.png" alt="Image"></a></div>
+                                       </div>
+                                       <div class="advanced-grid advanced-grid-44271729 categories-wall " style="margin-top: 60px;margin-bottom: 0px;">
+                                          <div style="">
+                                             <div class="container">
+                                                <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                                                   <div class="row">
+                                                      <div class="col-sm-4">
+                                                         <div class="category-wall">
+                                                            <div class="image" style="background: #f5f4f4">
+                                                               <a href="#">
+                                                               <img src="images/category-wall-01.png" alt="Image" style="margin-right: 0">
+                                                               </a>
+                                                            </div>
+                                                            <h3><a href="#">Men</a></h3>
+                                                            <ul>
+                                                               <li><a href="#">Outerwear</a></li>
+                                                               <li><a href="#">Blazers</a></li>
+                                                               <li><a href="#">Leather Jackets</a></li>
+                                                            </ul>
+                                                            <a href="#" class="more-categories">More categories</a>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                         <div class="category-wall">
+                                                            <div class="image" style="background: #f1f1f1"><a href="#"><img src="images/category-wall-02.png" alt="Image" style="margin-left: 0"></a></div>
+                                                            <h3><a href="#">Women</a></h3>
+                                                            <ul>
+                                                               <li><a href="#">Dresses</a></li>
+                                                               <li><a href="#">Maxi</a></li>
+                                                               <li><a href="#">Outerwear</a></li>
+                                                            </ul>
+                                                            <a href="#" class="more-categories">More categories</a>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                         <div class="category-wall">
+                                                            <div class="image" style="background: #fcfcfc"><a href="#"><img src="images/category-wall-03.png" alt="Image" style="margin-left: 0"></a></div>
+                                                            <h3><a href="#">Accessories</a></h3>
+                                                            <ul>
+                                                               <li><a href="#">Watches</a></li>
+                                                               <li><a href="#">Bags</a></li>
+                                                               <li><a href="#">Cases</a></li>
+                                                            </ul>
+                                                            <a href="#" class="more-categories">More categories</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <script type="text/javascript">
+                                          function force_full_width_44271729() 
+                                          {
+                                          	var p = $(".standard-body .full-width .advanced-grid-44271729");
+                                          
+                                          	if(p.size() > 0) 
+                                          	{
+                                          		p.width($('body').width());
+                                          		p.css("left", "0px");
+                                          		var position = p.offset();
+                                          		p.css("left", "-" + position.left + "px");
+                                          		p.find(".container").css("padding-left", position.left);
+                                          		p.find(".container").css("padding-right", position.left);
+                                          	}
+                                          
+                                          	var s = $(".standard-body .fixed .advanced-grid-44271729");
+                                          	if(s.size() > 0) 
+                                          	{
+                                          		s.width($('.standard-body .fixed .pattern').width());
+                                          		s.css("left", "0px");
+                                          		var position = s.offset();
+                                          		var position2 = $('.standard-body .fixed .pattern').offset();
+                                          		var position3 = position.left-position2.left;
+                                          		s.css("left", "-" + position3 + "px");
+                                          		s.find(".container").css("padding-left", position3);
+                                          		s.find(".container").css("padding-right", position3);
+                                          	}
+                                          
+                                          	var c = $(".fixed-body .advanced-grid-44271729");
+                                          	if(c.size() > 0) 
+                                          	{
+                                          		c.width($('.fixed-body .main-fixed').width());
+                                          		c.css("left", "0px");
+                                          		var position = c.offset();
+                                          		var position2 = $('.fixed-body .main-fixed').offset();
+                                          		var position3 = position.left-position2.left;
+                                          		c.css("left", "-" + position3 + "px");
+                                          		c.find(".container").css("padding-left", position3);
+                                          		c.find(".container").css("padding-right", position3);
+                                          	}
+                                          }
+                                          
+                                          force_full_width_44271729();
+                                          
+                                          $(window).resize(function() 
+                                          {
+                                          	force_full_width_44271729();
+                                          });
+                                       </script>
+                                       <div class="row banners">
+                                          <div class="col-sm-6"><a href="#"><img src="images/banner-06.png" alt="Image"></a></div>
+                                          <div class="col-sm-6"><a href="#"><img src="images/banner-07.png" alt="Image"></a></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-3" id="column_left">
+                                       <div class="box clearfix box-with-products with-scroll box-no-advanced">
+                                          <a class="next" href="#" id="myCarousel34950837_next"><span></span></a>
+                                          <a class="prev" href="#" id="myCarousel34950837_prev"><span></span></a>
+                                          <script type="text/javascript">
+                                             $(document).ready(function() {
+                                             var owl34950837 = $(".box #myCarousel34950837 .carousel-inner");
+                                             
+                                             $("#myCarousel34950837_next").click(function(){
+                                             owl34950837.trigger('owl.next');
+                                             return false;
+                                             })
+                                             $("#myCarousel34950837_prev").click(function(){
+                                             owl34950837.trigger('owl.prev');
+                                             return false;
+                                             });
+                                             
+                                             owl34950837.owlCarousel({
+                                             slideSpeed : 500,
+                                             singleItem:true,
+                                             });
+                                             });
+                                          </script>
+                                          <div class="box-heading">Bestsellers</div>
+                                          <div class="strip-line"></div>
+                                          <div class="clear"></div>
+                                          <div class="box-content products">
+                                             <div class="box-product">
+                                                <div id="myCarousel34950837" class="carousel slide">
+                                                   <!-- Carousel items -->
+                                                   <div class="carousel-inner">
+                                                      <div class="active item">
+                                                         <div class="product-grid">
+                                                            <div class="row">
+                                                               <div class="col-sm-6 col-xs-6  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="sale">Sale</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/apple_cinema_30-100x100.jpg" alt="Apple Cinema 30&quot;" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                        <script>
+                                                                           $(function () {
+                                                                           var austDay = new Date();
+                                                                           austDay = new Date(2016, 11 - 1, 01);
+                                                                           $('#countdown9162771').countdown({until: austDay});
+                                                                           });
+                                                                        </script>
+                                                                        <div id="countdown9162771" class="clearfix"></div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="product-detail.html">Apple Cinema 30&quot;</a></div>
+                                                                        <div class="price">
+                                                                           <span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-6 col-xs-6  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/ipod_classic_1-100x100.jpg" alt="iPod Classic" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="product-detail.html">iPod Classic</a></div>
+                                                                        <div class="price">
+                                                                           $122.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <div class="item">
+                                                         <div class="product-grid">
+                                                            <div class="row">
+                                                               <div class="col-sm-6 col-xs-6  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/hp_1-100x100.jpg" alt="HP LP3065" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="product-detail.html">HP LP3065</a></div>
+                                                                        <div class="price">
+                                                                           $122.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-6 col-xs-6  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="sale">Sale</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/canon_eos_5d_1-100x100.jpg" alt="Canon EOS 5D" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="product-detail.html">Canon EOS 5D</a></div>
+                                                                        <div class="price">
+                                                                           <span class="price-old">$122.00</span> <span class="price-new">$98.00</span>
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('30');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row banners hidden-xs hidden-sm">
+                                          <div class="col-sm-12"><a href="#"><img src="images/banner-08.png" alt="Image"></a></div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                       <div class="filter-product">
+                                          <div class="filter-tabs">
+                                             <div class="bg-filter-tabs">
+                                                <div class="bg-filter-tabs2 clearfix">
+                                                   <ul id="tab11990286">
+                                                      <li class="active"><a href="#">Men</a></li>
+                                                      <li><a href="#">Women</a></li>
+                                                      <li><a href="#">Accessories</a></li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="tab-content clearfix">
+                                             <div class="tab-pane active" id="latest-11990286-0">
+                                                <div class="box-product">
+                                                   <div id="myCarousel11990286-0" >
+                                                      <div class="carousel-inner">
+                                                         <div class="active item">
+                                                            <div class="product-grid">
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/samsung_tab_1-200x180.jpg" alt="Samsung Galaxy Tab 10.1" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Samsung Galaxy Tab 10.1</a></div>
+                                                                           <div class="price">
+                                                                              $241.99					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a href="javascript:openPopup('10', '49')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('49');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/ipod_classic_1-200x180.jpg" alt="iPod Classic" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">iPod Classic</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/hp_1-200x180.jpg" alt="HP LP3065" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">HP LP3065</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/sony_vaio_1-200x180.jpg" alt="Sony VAIO" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Sony VAIO</a></div>
+                                                                           <div class="price">
+                                                                              $1,202.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_pro_1-200x180.jpg" alt="MacBook Pro" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook Pro</a></div>
+                                                                           <div class="price">
+                                                                              $2,000.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_air_1-200x180.jpg" alt="MacBook Air" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook Air</a></div>
+                                                                           <div class="price">
+                                                                              $1,202.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_1-200x180.jpg" alt="MacBook" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook</a></div>
+                                                                           <div class="price">
+                                                                              $602.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="sale">Sale</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/apple_cinema_30-200x180.jpg" alt="Apple Cinema 30&quot;" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                           <script>
+                                                                              $(function () {
+                                                                              var austDay = new Date();
+                                                                              austDay = new Date(2016, 11 - 1, 01);
+                                                                              $('#countdown7900431').countdown({until: austDay});
+                                                                              });
+                                                                           </script>
+                                                                           <div id="countdown7900431" class="clearfix"></div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Apple Cinema 30&quot;</a></div>
+                                                                           <div class="price">
+                                                                              <span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="tab-pane " id="random-11990286-1">
+                                                <div class="box-product">
+                                                   <div id="myCarousel11990286-1" >
+                                                      <div class="carousel-inner">
+                                                         <div class="active item">
+                                                            <div class="product-grid">
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/imac_1-200x180.jpg" alt="iMac" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">iMac</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a href="javascript:openPopup('10', '41')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('41');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_pro_1-200x180.jpg" alt="MacBook Pro" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook Pro</a></div>
+                                                                           <div class="price">
+                                                                              $2,000.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/palm_treo_pro_1-200x180.jpg" alt="Palm Treo Pro" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Palm Treo Pro</a></div>
+                                                                           <div class="price">
+                                                                              $337.99					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('29');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('29');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="sale">Sale</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/canon_eos_5d_1-200x180.jpg" alt="Canon EOS 5D" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Canon EOS 5D</a></div>
+                                                                           <div class="price">
+                                                                              <span class="price-old">$122.00</span> <span class="price-new">$98.00</span>
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('30');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('30');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/htc_touch_hd_1-200x180.jpg" alt="HTC Touch HD" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">HTC Touch HD</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('28');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('28');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_1-200x180.jpg" alt="MacBook" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook</a></div>
+                                                                           <div class="price">
+                                                                              $602.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/ipod_nano_1-200x180.jpg" alt="iPod Nano" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">iPod Nano</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a href="javascript:openPopup('10', '36')" data-toggle="tooltip" data-original-title="Request quote!"><i class="fa fa-question"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('36');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/ipod_touch_1-200x180.jpg" alt="iPod Touch" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">iPod Touch</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('32');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('32');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="tab-pane " id="most_viewed-11990286-2">
+                                                <div class="box-product">
+                                                   <div id="myCarousel11990286-2" >
+                                                      <div class="carousel-inner">
+                                                         <div class="active item">
+                                                            <div class="product-grid">
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="sale">Sale</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/apple_cinema_30-200x180.jpg" alt="Apple Cinema 30&quot;" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                           <script>
+                                                                              $(function ()
+                                                                               {
+                                                                              var austDay = new Date();
+                                                                              austDay = new Date(2016, 11 - 1, 01);
+                                                                              $('#countdown2500803').countdown({until: austDay});
+                                                                              });
+                                                                           </script>
+                                                                           <div id="countdown2500803" class="clearfix"></div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Apple Cinema 30&quot;</a></div>
+                                                                           <div class="price">
+                                                                              <span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/ipod_classic_1-200x180.jpg" alt="iPod Classic" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">iPod Classic</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('48');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('48');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/hp_1-200x180.jpg" alt="HP LP3065" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">HP LP3065</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="sale">Sale</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/canon_eos_5d_1-200x180.jpg" alt="Canon EOS 5D" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Canon EOS 5D</a></div>
+                                                                           <div class="price">
+                                                                              <span class="price-old">$122.00</span> <span class="price-new">$98.00</span>
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('30');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('30');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="row">
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/sony_vaio_1-200x180.jpg" alt="Sony VAIO" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">Sony VAIO</a></div>
+                                                                           <div class="price">
+                                                                              $1,202.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_1-200x180.jpg" alt="MacBook" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook</a></div>
+                                                                           <div class="price">
+                                                                              $602.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="new">New</div>
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/macbook_air_1-200x180.jpg" alt="MacBook Air" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">MacBook Air</a></div>
+                                                                           <div class="price">
+                                                                              $1,202.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-6  ">
+                                                                     <div class="product clearfix product-hover">
+                                                                        <div class="left">
+                                                                           <div class="image ">
+                                                                              <a href="product-detail.html">
+                                                                              <img src="images/demo/htc_touch_hd_1-200x180.jpg" alt="HTC Touch HD" class="zoom-image-effect" />
+                                                                              </a>
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                           <div class="name"><a href="#">HTC Touch HD</a></div>
+                                                                           <div class="price">
+                                                                              $122.00					
+                                                                           </div>
+                                                                           <div class="only-hover">
+                                                                              <ul>
+                                                                                 <li><a onclick="cart.add('28');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                                 <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                                 <li><a onclick="wishlist.add('28');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                              </ul>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <script type="text/javascript">
+                                          $('#tab11990286 a').click(function (e) {
+                                          e.preventDefault();
+                                          $(this).tab('show');
+                                          })
+                                       </script>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                       <div class="advanced-grid advanced-grid-77077012  hidden-xs hidden-sm" style="margin-top: 115px;margin-bottom: 0px;">
+                                          <div style="background-color: #f3f3f3;">
+                                             <div class="container">
+                                                <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+                                                   <div class="row">
+                                                      <div class="col-sm-12">
+                                                         <div class="banner-big-sale">
+                                                            <h3>Check all<br>products on SALE!</h3>
+                                                            <a href="#" class="button">Read more</a>
+                                                            <img src="images/banner-big-sale.png" alt="Big sale" style="position:absolute;bottom: 0;right:74px;">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <script type="text/javascript">
+                                          function force_full_width_77077012() {
+                                          var p = $(".standard-body .full-width .advanced-grid-77077012");
+                                          
+                                          if(p.size() > 0) {
+                                          p.width($('body').width());
+                                          p.css("left", "0px");
+                                          var position = p.offset();
+                                          p.css("left", "-" + position.left + "px");
+                                          p.find(".container").css("padding-left", position.left);
+                                          p.find(".container").css("padding-right", position.left);
+                                          
+                                          }
+                                          
+                                          var s = $(".standard-body .fixed .advanced-grid-77077012");
+                                          if(s.size() > 0) {
+                                          s.width($('.standard-body .fixed .pattern').width());
+                                          s.css("left", "0px");
+                                          var position = s.offset();
+                                          var position2 = $('.standard-body .fixed .pattern').offset();
+                                          var position3 = position.left-position2.left;
+                                          s.css("left", "-" + position3 + "px");
+                                          s.find(".container").css("padding-left", position3);
+                                          s.find(".container").css("padding-right", position3);
+                                          }
+                                          
+                                          var c = $(".fixed-body .advanced-grid-77077012");
+                                          if(c.size() > 0) {
+                                          c.width($('.fixed-body .main-fixed').width());
+                                          c.css("left", "0px");
+                                          var position = c.offset();
+                                          var position2 = $('.fixed-body .main-fixed').offset();
+                                          var position3 = position.left-position2.left;
+                                          c.css("left", "-" + position3 + "px");
+                                          c.find(".container").css("padding-left", position3);
+                                          c.find(".container").css("padding-right", position3);
+                                          }
+                                          }
+                                          
+                                          force_full_width_77077012();
+                                          
+                                          $(window).resize(function() {
+                                          force_full_width_77077012();
+                                          });
+                                       </script>
+                                       <div class="box clearfix box-with-products  box-no-advanced">
+                                          <div class="box-heading">Featured</div>
+                                          <div class="strip-line"></div>
+                                          <div class="clear"></div>
+                                          <div class="box-content products">
+                                             <div class="box-product">
+                                                <div id="myCarousel26813386" >
+                                                   <!-- Carousel items -->
+                                                   <div class="carousel-inner">
+                                                      <div class="active item">
+                                                         <div class="product-grid">
+                                                            <div class="row">
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="sale">Sale</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/apple_cinema_30-200x200.jpg" alt="Apple Cinema 30&quot;" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                        <script>
+                                                                           $(function () {
+                                                                           var austDay = new Date();
+                                                                           austDay = new Date(2016, 11 - 1, 01);
+                                                                           $('#countdown3108096').countdown({until: austDay});
+                                                                           });
+                                                                        </script>
+                                                                        <div id="countdown3108096" class="clearfix"></div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">Apple Cinema 30&quot;</a></div>
+                                                                        <div class="price">
+                                                                           <span class="price-old">$122.00</span> <span class="price-new">$110.00</span>
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('42');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('42');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/hp_1-200x200.jpg" alt="HP LP3065" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">HP LP3065</a></div>
+                                                                        <div class="price">
+                                                                           $122.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('47');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('47');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/sony_vaio_1-200x200.jpg" alt="Sony VAIO" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">Sony VAIO</a></div>
+                                                                        <div class="price">
+                                                                           $1,202.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('46');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('46');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3  ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_pro_1-200x200.jpg" alt="MacBook Pro" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook Pro</a></div>
+                                                                        <div class="price">
+                                                                           $2,000.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('45');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('45');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3 hidden-sm ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_air_1-200x200.jpg" alt="MacBook Air" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook Air</a></div>
+                                                                        <div class="price">
+                                                                           $1,202.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('44');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('44');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-sm-2 col-xs-6 col-md-25 col-lg-2 col-sm-3 hidden-md hidden-sm ">
+                                                                  <!-- Product -->
+                                                                  <div class="product clearfix product-hover">
+                                                                     <div class="left">
+                                                                        <div class="new">New</div>
+                                                                        <div class="image ">
+                                                                           <a href="product-detail.html">
+                                                                           <img src="images/demo/macbook_1-200x200.jpg" alt="MacBook" class="zoom-image-effect" />
+                                                                           </a>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                        <div class="name"><a href="#">MacBook</a></div>
+                                                                        <div class="price">
+                                                                           $602.00					
+                                                                        </div>
+                                                                        <div class="only-hover">
+                                                                           <ul>
+                                                                              <li><a onclick="cart.add('43');" data-toggle="tooltip" data-original-title="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                                              <li class="quickview"><a href="#" data-toggle="tooltip" data-original-title="Quickview"><i class="fa fa-search"></i></a></li>
+                                                                              <li><a onclick="wishlist.add('43');" data-toggle="tooltip" data-original-title="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                                                                           </ul>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 
+                    <div class="footer full-width">
+	<div class="background-footer"></div>
+	<div class="background">
+	   <div class="shadow"></div>
+	   <div class="pattern">
+		  <div class="container">
+			 <div class="advanced-grid advanced-grid-97215660" style="margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;">
+				<div style="">
+				   <div class="container">
+					  <div style="padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;">
+						 <div class="row">
+							<div class="col-sm-12">
+							   <div class="row footer-blocks-top">
+								  <div class="col-sm-4 text-center">
+									 <div class="footer-block">
+										<img src="images/icon-mail.png" alt="Mail">
+										<div class="footer-block-content">
+										   <h6>Do you have any question?</h6>
+										   <p>shopocusenterprises@gmail.com</p>
+										</div>
+									 </div>
+								  </div>
+								  <div class="col-sm-4 text-center">
+									 <div class="footer-block">
+										<img src="images/icon-phone.png" alt="Phone">
+										<div class="footer-block-content">
+										   <h6>+91-7078178999</h6>
+										   <p>Mon - Fri: 8:00 - 17:00</p>
+										</div>
+									 </div>
+								  </div>
+								  <div class="col-sm-4 text-center">
+									 <a href="contact-us.html" class="footer-button">Contact Us</a>
+								  </div>
+							   </div>
+							</div>
+						 </div>
+						 <div class="row">
+							<div class="col-sm-3">
+							   <div class="footer-about-us" style="padding-top:0px">
+								   <h4>About Us</h4>
+								  <h6 style="padding-top:0px">7/1447 Chauntala Mohalla, Saharanpur <br>247001 India.</h6>
+								  <p>(+91) 7078 178 999<br>info@company.com</p>
+								  <ul class="social-icons">
+									 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									 <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+								  </ul>
+							   </div>
+							</div>
+							<div class="col-sm-3">
+							   <h4>Custom block</h4>
+							   <div class="strip-line"></div>
+							   <div class="row" style="clear: both">
+								  <div class="col-sm-12">
+									 <ul>
+										<li><a href="about-us.html">About us</a></li>
+										<li><a href="privacy-policy.html">Privacy Policy</a></li>
+										<li><a href="terms-condition.html">Terms & Conditions</a></li>
+										<li><a href="faq.html">Faq</a></li>
+										<li><a href="login.html">login</a></li>
+										
+										
+									 </ul>
+								  </div>
+							   </div>
+							</div>
+							<div class="col-sm-3">
+							   <h4>My Account</h4>
+							   <div class="strip-line"></div>
+							   <div class="row" style="clear: both">
+								  <div class="col-sm-12">
+									 <ul>
+										<li><a href="account-dashboard.html">My account</a></li>
+										<li><a href="my-order.html">Order History</a></li>
+										<li><a href="my-wishlist.html">Wish List</a></li>
+										<li><a href="newsletter-subscription.html">Newsletter</a></li>
+										<li><a href="my-return.html">Returns</a></li>
+									 </ul>
+								  </div>
+							   </div>
+							</div>
+							<div class="col-sm-3">
+							   <h4>What you want</h4>
+							   <div class="strip-line"></div>
+							   <div class="clearfix" style="clear: both">
+								  <div class="advanced-grid-products">
+									 <div class="product clearfix">
+										<div class="image"><a href="index.html"><img src="images/demo/samsung_tab_1-84x84.jpg" alt="Samsung Galaxy Tab 10.1" /></a></div>
+										<div class="right">
+										   <div class="name"><a href="index.html">Samsung Galaxy Tab 10.1</a></div>
+										   <div class="price">$241.99</div>
+										</div>
+									 </div>
+									 <div class="product clearfix">
+										<div class="image"><a href="index.html"><img src="images/demo/ipod_classic_1-84x84.jpg" alt="iPod Classic" /></a></div>
+										<div class="right">
+										   <div class="name"><a href="index.html">iPod Classic</a></div>
+										   <div class="price">$122.00</div>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							</div>
+						 </div>
+						 <div class="row">
+							<div class="col-sm-12">
+							   <div class="row footer-blocks-bottom">
+								  <div class="col-sm-4 text-center">
+									 <div class="footer-block">
+										<img src="images/icon-free-shipping.png" alt="Free shipping">
+										<div class="footer-block-content">
+										   <h6>Free shipping & Return</h6>
+										   <p>For all orders over &#x20B9;500</p>
+										</div>
+									 </div>
+								  </div>
+								  <div class="col-sm-4 text-center">
+									 <div class="footer-block">
+										<img src="images/icon-money-back.png" alt="Money back">
+										<div class="footer-block-content">
+										   <h6>Money back guarantee</h6>
+										   <p>100% money back guarante</p>
+										</div>
+									 </div>
+								  </div>
+								  <div class="col-sm-4 text-center">
+									 <div class="footer-block">
+										<img src="images/icon-support.png" alt="Support">
+										<div class="footer-block-content">
+										   <h6>Support 24/7</h6>
+										   <p>We answer for question all time</p>
+										</div>
+									 </div>
+								  </div>
+							   </div>
+							</div>
+						 </div>
+						 <div class="row">
+							<div class="col-sm-12">
+							   <div style="text-align: center">Copyright &#169; 2019, Shopocus, All Rights Reserved.</div>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+</div>
+					<script type="text/javascript" src="js/megamenu.js"></script> 
+                    </div>
+               </div>
+            </body>
+         
+<!-- Mirrored from depasserinfotech.in/ecom-themes/1/index.php?route=information/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Mar 2019 13:02:19 GMT -->
+</html>
