@@ -1,0 +1,24 @@
+{
+  "name": "shopocus",
+  "version": "1.0.0",
+  "description": "Shopocus E-commerce Wesite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev":"nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singhalshubh4/Shopocus.git"
+  },
+  "author": "Shashwat vats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/singhalshubh4/Shopocus/issues"
+  },
+  "homepage": "https://github.com/singhalshubh4/Shopocus#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
